@@ -1,8 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react"
+import logo from "./logo.svg"
+import "./App.css"
 
+const f = async () => {
+  const result = await fetch("google.com")
+  console.log(result)
+}
 class App extends Component {
+  constructor() {
+    super()
+    f()
+  }
+
   render() {
     return (
       <div className="App">
@@ -21,8 +30,8 @@ class App extends Component {
           </a>
         </header>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
