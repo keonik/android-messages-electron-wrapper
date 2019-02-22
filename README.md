@@ -8,7 +8,7 @@ In the project directory, run:
 
 Which installs the dependencies needed.
 
-### `npm run dev`
+### `npm run electron-dev`
 
 Calls the ProcFile to launch the server and electron.
 
@@ -16,8 +16,10 @@ Calls the ProcFile to launch the server and electron.
 
 In the project directory, run:
 
-### npm run build
+### npm run preelectron-pack && npm run electron-pack
+
+and your build folder should be packaged with the install file (only tested on Mac)
 
 ## Common issues
 
-Often certain installed libraries cause issues with electron and most if not all I've personally run into have been fixed by a library known as electron-rebuild. You essentialy install electron-rebuild and prior to running your `npm run dev` command, you would add a script to call electron-rebuild.
+Often certain installed libraries cause issues with electron and most if not all I've personally run into have been fixed by a library known as electron-rebuild. You essentialy install electron-rebuild and prior to running your `npm run electron-dev` command, you would add a script to call electron-rebuild.
