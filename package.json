@@ -15,7 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "nf start"
+    "dev": "nf start",
+    "prod": "BROWSER=none"
   },
   "eslintConfig": {
     "extends": "react-app"
