@@ -1,9 +1,9 @@
 {
-  "short_name": "React & Electron App",
-  "name": "Create React App paired with Electron",
+  "short_name": "Android Messages",
+  "name": "Android Messages electron wrapper",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "messages.android.com.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

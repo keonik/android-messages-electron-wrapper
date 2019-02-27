@@ -1,4 +1,4 @@
-Minimalist boilerplate taking in create-react-app and packaging that into an electron app. That process is run by a library called foreman which basically runs both the launch of the site and the electron app from a ProcFile.
+Wrapper desktop application for the Android Messages site.
 
 yarn 1.13.0
 node 10.15.1
