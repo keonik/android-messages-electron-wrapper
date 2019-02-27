@@ -1,5 +1,5 @@
 {
-  "name": "messages-android-com",
+  "name": "minimalist-electron-react-boilerplate",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -12,7 +12,7 @@
   "build": {
     "appId": "your.id",
     "mac": {
-      "category": "messenger"
+      "category": "your.app.category.type"
     }
   },
   "license": "UNLICENSED",
