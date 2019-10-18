@@ -1,6 +1,6 @@
 {
-  "short_name": "React & Electron App",
-  "name": "Create React App paired with Electron",
+  "short_name": "Android Messenger Desktop",
+  "name": "Android Messenger wrapped into an Electron window",
   "icons": [
     {
       "src": "favicon.ico",
@@ -11,5 +11,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#000000"
 }

@@ -1,13 +1,13 @@
 {
+  "author": {
+    "name": "John Fay",
+    "email": "john.k.fay@gmail.com"
+  },
   "name": "minimalist-electron-react-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "dependencies": {
-    "electron-is-dev": "^1.0.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "^2.1.5",
-    "typescript": "^3.3.3333"
+    "electron-is-dev": "^1.1.0"
   },
   "build": {
     "appId": "your.id",
@@ -16,8 +16,8 @@
     }
   },
   "license": "UNLICENSED",
-  "homepage": "./",
   "main": "public/electron.js",
+  "homepage": "./",
   "scripts": {
     "start": "BROWSER=none react-scripts start",
     "test": "react-scripts test",
@@ -26,21 +26,26 @@
     "dist": "electron-builder",
     "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "postinstall": "electron-builder install-app-deps",
+    "security": "yarn audit && yarn outdated",
     "build": "react-scripts build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "electron": "^4.0.5",
-    "electron-builder": "^20.38.5",
-    "wait-on": "^3.2.0"
+    "concurrently": "^5.0.0",
+    "electron": "^6.0.12",
+    "electron-builder": "^21.2.0",
+    "react-scripts": "^3.2.0",
+    "wait-on": "^3.3.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
