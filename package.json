@@ -24,7 +24,7 @@
     "build": "cp -R public/ build/"
   },
   "devDependencies": {
-    "electron": "^30.4.0",
+    "electron": "^33.4.3",
     "electron-builder": "^24.13.2"
   }
 }
